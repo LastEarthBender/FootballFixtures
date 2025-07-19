@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/fixturesFragment"
+        android:icon="@drawable/soccer"
+        android:title="" />
+    <item
+        android:id="@id/competitionsFragment"
+        android:icon="@drawable/soccer_field"
+        android:title="" />
+</menu>

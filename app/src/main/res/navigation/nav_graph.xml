@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fixturesFragment">
+
+    <fragment
+        android:id="@+id/fixturesFragment"
+        android:name="com.example.footballfixtures.ui.fixtures.ui.FixturesFragment"
+        android:label="Today's Fixtures" />
+
+    <fragment
+        android:id="@+id/competitionsFragment"
+        android:name="com.example.footballfixtures.ui.competitions.ui.CompetitionsFragment"
+        android:label="Competitions" />
+
+    <fragment
+        android:id="@+id/nav_competition_detail"
+        android:name="com.example.footballfixtures.ui.competitions.ui.CompetitionDetailFragment"
+        >
+        <argument
+            android:name="competition_code"
+            app:argType="string" />
+        <argument
+            android:name="competition_name"
+            app:argType="string" />
+    </fragment>
+
+
+</navigation>
